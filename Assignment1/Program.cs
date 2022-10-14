@@ -14,7 +14,7 @@ namespace Assignment1
 {
     public class Program
     {
-        //Added the initializer for the seeded data.
+        // OCT 14 7:15 Added the initializer for the seeded data.
         public static void Main(string[] args)
         {
             var host = CreateHostBuilder(args).Build();

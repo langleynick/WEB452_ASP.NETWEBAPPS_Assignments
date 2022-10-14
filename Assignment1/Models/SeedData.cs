@@ -14,7 +14,7 @@ namespace Assignment1.Models
         {
             using (var context = new Assignment1Context(serviceProvider.GetRequiredService<DbContextOptions<Assignment1Context>>()))
             {
-                //Check if there are products in the database
+                // OCT 14 7:00 Check if there are products in the database
                 //If there are, DB is seeded and no need to inject new ones
                 if (context.Product.Any())
                 {
