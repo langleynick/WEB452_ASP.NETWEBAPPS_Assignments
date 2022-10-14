@@ -13,6 +13,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace Assignment1
 {
     public class Startup
@@ -34,6 +35,9 @@ namespace Assignment1
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
             services.AddRazorPages();
+
+            services.AddDbContext<Assignment1Context>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("Assignment1Context")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
