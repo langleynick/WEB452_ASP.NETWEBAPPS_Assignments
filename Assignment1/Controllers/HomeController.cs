@@ -22,6 +22,10 @@ namespace Assignment1.Controllers
         {
             return View();
         }
+        public IActionResult AboutUs()
+        {
+            return View();
+        }
 
         public IActionResult Privacy()
         {
