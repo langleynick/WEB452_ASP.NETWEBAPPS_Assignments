@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace Assignment1.Models
 {
+    //Model class for the products
     public class Product
     {
         public int Id { get; set; }
