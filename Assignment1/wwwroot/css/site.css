@@ -6,7 +6,76 @@ a.navbar-brand {
   text-align: center;
   word-break: break-all;
 }
-
+/*General styles for the site*/
+.wrapper {
+    padding: 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: white;
+}
+body {
+    font-family: 'Arial Rounded MT';
+    background-color: lightgreen;
+}
+.nav-bar {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.nav-item {
+    border-right: 3px solid black;
+}
+.nav-item:last-of-type {
+    border-right: none;
+}
+/*Added in styles for the pictures to behave properly*/
+img#deskpic {
+    width: 49%;
+    border: 10px double black;
+}
+img#coffee-table {
+    width: 49%;
+    float: right;
+    border: 10px double black;
+}
+img#shelf {
+    display: block;
+    margin: 0 auto;
+    width: 49%;
+    border: 10px double black;
+    float: left;
+}
+img#bar-cart {
+    width: 49%;
+    display: block;
+    margin: 0 auto;
+    border: 10px double black;
+    float: right;
+}
+@media (max-width: 768px){
+    img#coffee-table {
+        width: 90%;
+        float: none;
+    }
+    img#deskpic {
+        width: 90%;
+    }
+    img#shelf {
+        width: 90%;
+    }
+    img#bar-cart {
+        width: 90%;
+    }
+}
+/*Inserted styles for team member blocks*/
+div.team-member{
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 10px;
+    background-color: lightgray;
+    border: 10px double black;
+}
+div h3.member-title, div.team-member p:first-of-type {
+    font-weight: bold;
+}
 /* Provide sufficient contrast against white background */
 a {
   color: #0366d6;
@@ -26,12 +95,13 @@ a {
 
 /* Sticky footer styles
 -------------------------------------------------- */
+/*Changed font sizes*/
 html {
-  font-size: 14px;
+  font-size: 16px;
 }
 @media (min-width: 768px) {
   html {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
